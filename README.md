@@ -2,7 +2,7 @@
 
 SCENE is a single-cell DNA Deaminase based chromatin immuno-conversion sequencing data analysis pipeline. 1) Pre-processing: Read filtering and alignment, conversion-rate calculation, and removal of SNP-confounded sites; 2) Bulk-level analysis: Peak calling by comparing DeChIC-seq data targeting histone modification or TF to an IgG control; 3) Single-cell analysis: Peak calling for scDeChIC-seq by comparing each cell (or pseudo-bulk signal) to a pseudo-IgG background. SCENE generates a peak-by-cell matrix derived from conversion rates. The matrix can be analyzed with Signac (Seurat) for dimensionality reduction, clustering, and cell-type annotation. SCENE also supports peak clustering based on the proportion of cells with detectable occupancy for each peak.
 
-![Pipeline Diagram](images/SCENE_workflow.png)
+![Pipeline Diagram](SCENE/images/SCENE_workflow.png)
 
 ---
 
