@@ -120,7 +120,5 @@ Python
 For any questions or suggestions, please contact:
 
 Author: Xiyang Chen
-
 Email: chenxiyang12@outlook.com
-
 GitHub: XiyangChen12
