@@ -75,9 +75,9 @@ Required Parameters:
 
 Optional Parameters:
 -IgG : IgG bedgraph path. If omitted, SCENE will use pseudo-IgG (mean background) for each sample.
---met_M <n>           -M, --maxdist <n>      maximum distance (default: 50)
---met_m <n>           -m, --mincpgs <n>      minimum CpGs (default: 6)
---met_t <n>           -t, --threads <n>      number of threads (default: 40)
+--met_M <n>           maximum distance (default: 50)
+--met_m <n>           minimum CpGs (default: 6)
+--met_t <n>           number of threads (default: 40)
 --p_th <float>        Maximum p-value (<) for output peaks (default: 0.05)
 --d_th <float>        Minimum mean methylation difference (>=) (default: 0.2)
 --merge_d <int>       Minimum distance for merging nearby peaks (default: 200)
