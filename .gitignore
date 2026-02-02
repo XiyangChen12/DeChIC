@@ -1,0 +1,17 @@
+cat > .gitignore <<'EOF'
+__pycache__/
+*.pyc
+*.pyo
+
+.venv/
+venv/
+env/
+
+build/
+dist/
+*.egg-info/
+
+.snakemake/
+logs/
+tmp*/
+EOF

@@ -1,0 +1,6 @@
+include README.md
+include SCENE/config.yaml
+recursive-include SCENE/modules *.snakefile
+recursive-include SCENE/resources *
+recursive-include SCENE/scripts *
+recursive-include images *

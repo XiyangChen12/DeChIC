@@ -1,0 +1,64 @@
+# config.yaml
+
+sample_type: bulk      # bulk | singlecell
+
+# -------------------------
+# sample_type-specific
+# -------------------------
+bulk:
+  clip_R1: 10
+  clip_R2: 10
+  three_prime_clip_R1: 10
+  three_prime_clip_R2: 10
+  depth: 1
+
+singlecell:
+  clip_R1: 45
+  clip_R2: 45
+  three_prime_clip_R1: 3
+  three_prime_clip_R2: 3
+  depth: 0
+
+# -------------------------
+# BASAL align default params
+# -------------------------
+basal:
+  align:
+    min_insert_size: 1
+    max_insert_size: 1000
+    report_repeat_hits: 1
+    max_mismatch: 0.06
+    seed_size: 16
+    random_seed: 1
+    strand_info: 1
+    max_gap: 1
+    convert: "C:T"
+
+# -------------------------
+# basalkit avgmod default params
+# -------------------------
+basalkit:
+  avgmod:
+    rm_dup: true
+    min_depth: 1
+    handle_SNP: "correct"
+
+# -------------------------
+# paths
+# -------------------------
+paths:
+  basal_bin: "basal"                          
+  basalkit_avgmod_py: "scripts/basalkit_filterTC.py"
+  blacklist_bed: "resources/mm10.DeChIC.blacklist.bed"
+
+  # rateMatrix outputs
+  ratio_dir: "ratio"
+  bam_dir: "bam_file"
+
+  # singlecell merge outputs
+  merged_bam_dir: "merged_bam_file"
+  merged_ratio_dir: "merged_bam_ratio"
+
+  # callpeak outputs
+  callpeak_dir: "callpeak"
+  metilene_input_pl: "scripts/metilene_input.pl"
