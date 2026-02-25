@@ -17,15 +17,15 @@ setup(
     long_description=read_readme(),
     long_description_content_type="text/markdown",
     url="https://github.com/XiyangChen12/SCENE",
-    packages=find_packages(),  # will find the SCENE/ package
-    include_package_data=True, # include files from MANIFEST.in
+    packages=find_packages(),
+    include_package_data=True,
     python_requires=">=3.7",
     install_requires=[
         "snakemake>=7.19.1",
     ],
     entry_points={
         "console_scripts": [
-            "SCENE=SCENE.run:main",  # run.py is now inside the SCENE/ package
+            "SCENE=SCENE.run:main",
         ],
     },
     classifiers=[
