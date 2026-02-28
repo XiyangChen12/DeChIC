@@ -33,7 +33,6 @@ def run_snakemake(workflow: str, config_options: dict, cores: int = 4):
 
     config_args = " ".join([f"{k}={_q(v)}" for k, v in config_options.items()])
 
-    # Use absolute snakefile path so it works anywhere.
     default_config = PKG_DIR / "config.yaml"
     cmd = f"snakemake --snakefile {snakefile} --cores {cores} --configfile {default_config} --config {config_args}"
     print(f"Running: {cmd}")
