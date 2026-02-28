@@ -92,7 +92,7 @@ if basalkit_avgmod_py == "" or not Path(basalkit_avgmod_py).exists():
 if blacklist_bed == "" or not Path(blacklist_bed).exists():
     raise FileNotFoundError(f"blacklist_bed not found in package: {blacklist_bed}")
 
-# output dirs (project-relative, DO NOT resolve to package)
+# output dirs
 merged_bam_dir = config.get("paths", {}).get("merged_bam_dir", "merged_bam_file")
 merged_ratio_dir = config.get("paths", {}).get("merged_ratio_dir", "merged_bam_ratio")
 
