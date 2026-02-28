@@ -97,7 +97,7 @@ merged_bam_dir = config.get("paths", {}).get("merged_bam_dir", "merged_bam_file"
 merged_ratio_dir = config.get("paths", {}).get("merged_ratio_dir", "merged_bam_ratio")
 
 # -----------------------------
-# BASAL align params (CLI overrides if injected; else config.yaml defaults)
+# BASAL align params
 # -----------------------------
 def _align_param(flat_key, yaml_key):
     if flat_key in config and config[flat_key] is not None and str(config[flat_key]).strip() != "":
@@ -124,7 +124,6 @@ SAMPLES = sorted([
 if not SAMPLES:
     raise FileNotFoundError(f"No *.R1.fastq.gz found in raw_dir: {raw_dir}")
 
-# singlecell groups: <GROUP>_<digits>
 GROUPS = []
 if sample_type == "singlecell":
     pat = re.compile(r"^(.*)_(\d+)$")
